@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SA-MP.lt Naujos kartos serveris</title>
+
+    <link href="assets/favicon.png" rel="icon" type="image/x-icon" />
+    <meta name="keywords" content="Grand Theft Auto, sa-mp, serveriai, realus, gyvenimas, multiplayer, geriausias, reallife, serveris, san fierro, roleplay, serveriu, ip" /> 
+    <meta name="description" content="Lietuviškas Grand Theft Auto sa-mp modifikacijos serveris. Vienas iš pirmųjų serverių kuris leidžia žaisti San Andreas su kitais!" />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+  
+    <style>
+      .gradient {
+        background: url("assets/bg.jpg") no-repeat center center fixed; 
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size: cover;
+        height: 100%;
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+          background: #1f2937; 
+      }
+
+      ::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          background: #0891b2; 
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+          background: #0e7490; 
+      }
+
+    </style>
+  </head>
+  <body oncontextmenu="return false;" class="leading-normal tracking-normal text-white gradient" style="font-family: 'Lato', Calibri, Arial, sans-serif;">
+    <nav id="header" class="w-full z-30 top-0 text-white">
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <img src="assets/logo.png" alt="Logotipas" />
+        <div class="block lg:hidden pr-4">
+          <button data-collapse-toggle="nav-toggle" aria-controls="nav-toggle" aria-expanded="false" class="flex items-center p-1 hover:text-gray-700 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-toggle">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a class="inline-block text-white font-bold no-underline hover:text-sky-600 hover:text-underline py-2 px-4" href="https://gta-sa-mp.lt">Forumas</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-white font-bold no-underline hover:text-sky-600 hover:text-underline py-2 px-4" href="https://samp.gta-sa-mp.lt/vvp">
+                <button type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-2 -ml-1 w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Jungtis prie valdymo panelės
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="pt-10">
+      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+          <h1 class="my-4 text-5xl font-bold leading-tight uppercase text-sky-600">
+            Mes sugrįžtame!
+          </h1>
+          <p class="leading-normal text-base text-justify mb-9">
+            Pagaliau, galime pranešti oficialiai, kad serveris pilnai paruoštas paleidimui. Po ilgo laiko ir sunkaus darbo pabaigėme savo ilgai žadėtą atnaujinimą. Visą šį laiką nesėdėjome rankų sudėję, o dirbome, tad pagaliau savo darbo vaisius galime parodyti ir Jums – mūsų ištikimiems žaidėjams. Žinome, kad šis atnaujinimas vieniems gali pasirodyti mažas, tačiau tikime, kad atsiras ir tų, kurie pastebės įdėtą darbą. Šis atnaujinimas (v1.5), mūsų komandos atžvilgiu, yra vienas didžiausiu per visą serverio gyvavimo istorija, tad tikime, kad ir Jūs tai matysite. Pakeitėme visą vartotojų valdymo pulto pagrindą, taip pat įdiegėme šiek tiek naujovių, taip pat papildomai sukūrėme pradinį puslapį, kuris pristato serverio veiklos pagrindus ir skelbia svarbiausią informaciją. Tikime, kad nuo šiol, dėl pasikeitusių sistemų, atnaujinimus daryti bus daug lengviau ir jų sulauksite dažniau. Norime priminti, kad be Jūsų mes neegzistuotumėme, tad visada lauksime Jūsų įvairių idėjų forume. Visų lauksime sugrįžtant į serverį, iki!
+          </p>
+        </div>
+        <div class="w-full md:w-40 py-6 text-center m-5">
+          <img class="md:w-40 z-50" src="assets/icon.png" />
+        </div>
+      </div>
+    </div>
+    <div class="relative -mt-12 lg:-mt-24">
+      <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g transform="translate(-4.000000, 44.000000)" fill="#80BCDC" fill-rule="nonzero">
+            <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+            <path
+              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+              opacity="0.100000001"
+            ></path>
+            <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+          </g>
+          <g transform="translate(-5.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path
+              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <section class="bg-white py-2">
+        <div class="p-4 text-center rounded-lg sm:p-8">
+          <h5 class="mb-2 text-3xl font-bold text-gray-900">PRADĖK ŽAISTI SERVERYJE</h5>
+          <p class="mb-5 text-base text-gray-500 sm:text-lg">Reikalingiausios programos, kad galėtum žaisti mūsų serveryje</p>
+          <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+              <a href="https://sa-mp.com" class="sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" /></svg>
+                <div class="text-left">
+                    <div class="mb-1 text-xs">ATSISIŲSTI</div>
+                    <div class="-mt-1 font-sans text-sm font-semibold">SA:MP 0.3.7</div>
+                </div>
+              </a>
+              <a href="https://discord.com" class="sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <div class="text-left">
+                      <div class="mb-1 text-xs">ATSISIŲSTI</div>
+                      <div class="-mt-1 font-sans text-sm font-semibold">Discord</div>
+                  </div>
+              </a>
+              <a href="samp://samp.gta-sa-mp.lt" class="sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mr-3 w-7 h-7"><path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <div class="text-left">
+                    <div class="mb-1 text-xs">SERVERIS</div>
+                    <div class="-mt-1 font-sans text-sm font-semibold">Jungtis prie serverio</div>
+                </div>
+            </a>
+          </div>
+      </div>
+      <div class="container max-w-5xl mx-auto m-5">
+        <hr>
+        <br>
+        <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl font-bold leading-none mb-3 text-sky-600">
+              Daugybė veiklos serveryje
+            </h3>
+            <p class="text-gray-600 mb-8 text-justify">
+              Serveris turi tiek veiklos, kad visada rasite kuo užsiimti. Jūsų laukia gausus darbų pasirinkimas, kuriame kiekvienas atras save - nuo picų išvežiotojo iki policijos pareigūno. Vagysčių sistema tikrai patiks žaidėjams, kurie mėgsta šaudynes ir objekto gynybą. Svarbi veiklos sritis – trys klubai, kurie laukia kiekvieno žaidėjo. Mėgsti driftą, bet neįperki automobilio? Drift klubas tau padės! Mėgsti žudyti? Assasinų klubas laukia tavęs! Esi atsidavęs baikeris? Baikerių klubas nori tavęs! Kiekvieną dieną vyksta įvairūs administratorių rengiami turnyrai, nuo lenktynių iki šaudynių. Šios veiklos tikrai nėra pabaiga, serveryje galite rasti jų dar daugiau, kiekvienas tikrai ras sau tinkamą veiklą.
+            </p>
+            <button type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
+              <a href="https://gta-sa-mp.lt/index.php?/topic/1497-naujok%C5%B3-informacija/&tab=comments#comment-8069">Plačiau apie veiklas</a>
+            </button>
+          </div>
+          <div class="w-full sm:w-1/2">
+            <img class="rounded-lg" src="assets/m1.jpg" />
+          </div>
+        </div>
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div class="w-full sm:w-1/2 mt-6">
+            <img class="rounded-lg" src="assets/m3.jpg" />
+          </div>
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="align-middle">
+              <h3 class="text-3xl font-bold leading-none mb-3 text-sky-600">
+                Įdomi gaujų veikla
+              </h3>
+              <p class="text-gray-600 mb-8 text-justify">
+                Nori daug veiksmo? Įstok į gaują! Teritorijų karai kiekvieną dieną, vakarinis grobimas, kuriame vyksta pagrindinė dienos kova, bazių grobimai savaitgaliais, žmonių grobimas ir dar daugiau... Rink gaujos taškus, kelk gaujos lygį ir užvaldyk serverį su savo draugais!              </p>
+            </div>
+            <button type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
+              <a href="https://gta-sa-mp.lt/index.php?/topic/685-i%C5%A1sami-gauj%C5%B3-sistemos-ap%C5%BEvalga/&tab=comments#comment-3591">Plačiau apie gaujas</a>
+            </button>
+          </div>
+        </div>
+        <div class="container max-w-5xl mx-auto m-5">
+          <div class="flex flex-wrap">
+            <div class="w-5/6 sm:w-1/2 p-6">
+              <h3 class="text-3xl font-bold leading-none mb-3 text-sky-600">
+                Tapk verslininku serveryje
+              </h3>
+              <p class="text-gray-600 mb-8 text-justify">
+                Nori tapti turtingu? Kaip ir kiekvienam verslininkui pradžia yra sunki, tačiau turint daug noro, gali tapti milijonieriumi! Įsigyk ir būk savo įmonės direktoriumi! Įsigyjęs verslą, kuo dažniau pildyk jį resursais ir tobulink jo galimybes. Pirk savo įmonei transportą, samdyk darbuotojus ir palaikyk tvarką. Kas žino, gal būsi serverio naujasis milijonierius?
+              </p>
+              <button type="button" class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
+                <a href="https://gta-sa-mp.lt/index.php?/topic/685-i%C5%A1sami-gauj%C5%B3-sistemos-ap%C5%BEvalga/&tab=comments#comment-3591">Plačiau apie verslus</a>
+              </button>
+            </div>
+            <div class="w-full sm:w-1/2">
+              <img class="rounded-lg" src="assets/m2.jpg" />
+            </div>
+          </div>
+      </div>
+      <br>
+      <hr>
+      <section class="bg-white">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+            <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Pagrindinė administracija</h2>
+            </div> 
+            <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+                <div class="items-center bg-gray-50 rounded-lg shadow sm:flex">
+                    <a href="#">
+                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="assets/228.png" alt="Valia">
+                    </a>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold tracking-tight text-gray-900">
+                            <a href="#">Valia_Abdulov</a>
+                        </h3>
+                        <span class="text-gray-500">Savininkas</span>
+                        <p class="mb-15 font-light text-gray-500 w-[250px]">Projekto ramstis, atsakingas už serverio techninius klausimus, išpildo idėjas, vykdo atnaujinimus, taiso klaidas, vykdo kreditų perdavimą serverio žaidėjams.</p>
+                    </div>
+                </div> 
+                <div class="items-center bg-gray-50 rounded-lg shadow sm:flex">
+                    <a href="#">
+                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="assets/212.png" alt="Jim">
+                    </a>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold tracking-tight text-gray-900">
+                            <a href="#">Jim_Corres</a>
+                        </h3>
+                        <span class="text-gray-500">Vyr.Administratorius</span>
+                        <p class="mb-15 font-light text-gray-500 w-[250px]">Administracijos veiklos koordinatorius ir organizatorius. Atsakingas už serverio administracijos skundus, atblokavimo temas, žaidėjų statuso pakeitimus, aktyvacijas, svetainės atnaujinimo darbus.</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+      </section>
+      <hr>
+      <div class="container max-w-5xl mx-auto m-5">
+        <div class="flex flex-wrap">
+            <a href="https://discord.io/samplt"><img class="rounded-lg" src="assets/dc.png" /></a>
+        </div>
+    </section>
+    <footer class="h-auto p-4 w-full rounded-t-lg shadow md:flex md:items-center md:justify-between md:p-6 bg-gray-800">
+      <span class="text-sm text-gray-500 sm:text-centertext-gray-400">© 2022 SA-MP.lt Naujos kartos serveris<br><br>Puslapis atnaujintas <b>2022/12/23</b></span>
+      <div class="flex flex-row-reverse py-3">
+        <div><a href="https://www.facebook.com/GTA-sa-mplt-102535522155506/"><img src="assets/socialfb.png" alt="fb" /></div></a>
+        <div><a href="https://www.youtube.com/samplithuania"><img src="assets/socialyoutube.png" alt="yt" /></div></a>
+        <div><a href="skype:tikrasgyvenimas?chat"><img src="assets/socialskype.png" alt="skype" /></div></a>
+      </div>
+  </footer>
+</body>
+<script>
+document.onkeydown = function (e) {
+    if (event.keyCode == 123) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+        return false;
+    }
+    if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+        return false;
+    }
+}
+</script>
+</html>
