@@ -1,6 +1,4 @@
 body {
-  background-image: url('./assets/bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('./assets/bg.jpg') no-repeat cover;
 }
 
